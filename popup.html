@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Özet Geç P!</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Özet Geç P!</h1>
+    
+    <div class="api-key-container">
+      <div class="api-key-header">
+        <span class="api-key-status">API Anahtarı: <span id="api-key-indicator">✗</span></span>
+        <button id="toggle-api-key" class="toggle-btn">▼</button>
+      </div>
+      
+      <div id="api-key-section" class="collapsed">
+        <p>Gemini API Anahtarınızı girin:</p>
+        <input type="text" id="api-key" placeholder="Gemini API Anahtarı">
+        <button id="save-api-key">Kaydet</button>
+        <p class="info">API anahtarınız yoksa, <a href="https://aistudio.google.com" target="_blank">AI Studio</a> sayfasından "Get API Key" butonuna tıklayarak ücretsiz alabilirsiniz.</p>
+      </div>
+    </div>
+    
+    <div id="main-content">
+      <div id="summarize-section">
+        <button id="summarize-page" class="summarize-btn">Tüm Sayfayı Özetle</button>
+      </div>
+      
+      <div id="summary-result" class="hidden">
+        <div class="summary-header">
+          <h2>Sayfa Özeti</h2>
+          <button id="new-summary" class="icon-button">↺</button>
+        </div>
+        <div id="summary-content"></div>
+      </div>
+    </div>
+    
+    <div id="usage-container">
+      <div id="usage-section">
+        <p>Kullanım:</p>
+        <ol>
+          <li>Herhangi bir web sayfasında metni seçin</li>
+          <li>Sağ tıklayın ve "Özet Geç" seçeneğine tıklayın</li>
+          <li>Özet ekranda gösterilecektir</li>
+        </ol>
+      </div>
+    </div>
+    
+    <div id="status" class="hidden"></div>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

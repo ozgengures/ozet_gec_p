@@ -1,5 +1,7 @@
 # Özet Geç P! Chrome Eklentisi
 
+![Özet Geç P! İkonu](icons/icon128.png)
+
 Bu Chrome eklentisi, web sayfalarındaki metinleri Gemini AI yardımıyla özetlemenizi sağlar. Hem seçili metinleri hem de tüm sayfayı özetleyebilirsiniz.
 
 ## Özellikler
